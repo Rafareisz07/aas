@@ -1,0 +1,12 @@
+
+.botão {
+  background-color: #000066;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.botão:hover {
+  background-color: #0000cc;
+}
