@@ -2,9 +2,14 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import './app.css';
+import { Sidebar } from 'lucide-react';
+import {  FaWhatsapp 
+} from 'react-icons/fa'; 
+
 
 const Home = () => {
     const [expandedService, setExpandedService] = useState(null);
+    
 
     const services = [
         {
@@ -76,6 +81,7 @@ const Home = () => {
     };
 
     return (
+        
         <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white flex flex-col">
             {/* Header com menu centralizado */}
             <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -85,7 +91,7 @@ const Home = () => {
                             <div className="h-100 w-40 bg-white-600 rounded-lg flex items-center justify-center">
                                 <img src="/logo192.png" alt="Logo AAS"/>
                             </div>
-                            <span className="text-2xl font-bold text-gray-800">AAS Acessoria Contábil</span>
+                            <span className="text-2xl font-bold text-gray-800">AAS Assessoria Contábil</span>
                         </div>
 
                         {/* Menu centralizado */}
@@ -118,6 +124,15 @@ const Home = () => {
                     </div>
                 </div>
             </header>
+
+          <a 
+            href="https://wa.me/5511999999999"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50 flex items-center justify-center animate-bounce"
+          >
+            <FaWhatsapp size={28} />
+          </a>
 
             {/* Hero Section */}
             <section className="flex-1 flex items-center justify-center py-20 px-4 bg-gradient-to-b from-white to-gray-200">
